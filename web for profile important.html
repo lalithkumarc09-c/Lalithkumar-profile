@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LALITHKUMAR.C — Profile</title>
+
+  <!-- Optional: replace with your preferred font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #98a0b3;
+      --accent: #6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      --max-w: 1000px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071426 0%, #08162a 60%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px 16px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-w);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    /* Left column: profile card */
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:20px;
+      position:sticky;
+      top:32px;
+    }
+    .avatar{
+      width:100%;
+      display:flex;
+      justify-content:center;
+      margin-bottom:14px;
+    }
+    .avatar img{
+      width:160px;
+      height:160px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid rgba(255,255,255,0.06);
+      background:linear-gradient(180deg, #0e1c2a, #071226);
+    }
+    h1{margin:6px 0 2px;font-size:22px}
+    .role{color:var(--muted);font-size:13px;margin:0 0 12px}
+    .bio{color:var(--muted);font-size:14px;margin-bottom:14px}
+    .contact-row{display:flex;flex-direction:column;gap:8px;font-size:14px}
+    .chip{background:var(--glass); padding:8px 10px; border-radius:8px; color:var(--muted); display:flex; justify-content:space-between; align-items:center}
+    .socials{display:flex;gap:8px;margin-top:10px}
+    .socials a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted);text-decoration:none;font-weight:600}
+
+    /* Right column: content */
+    .content{
+      padding:18px;
+      border-radius:12px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
+    }
+    section{margin-bottom:20px}
+    section h2{margin:0 0 12px;font-size:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:13px}
+
+    .project{
+      background:rgba(255,255,255,0.02);
+      padding:12px;border-radius:10px;margin-bottom:10px;
+      display:flex;flex-direction:column;gap:6px;
+    }
+    .project a{color:var(--accent);text-decoration:none;font-weight:600}
+    .project .meta{color:var(--muted);font-size:13px}
+
+    /* Contact form */
+    .form-row{display:flex;gap:8px}
+    .form-row .field{flex:1}
+    input[type="text"], input[type="email"], textarea{
+      width:100%;
+      padding:10px 12px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.03);
+      background:rgba(255,255,255,0.02);
+      color:inherit;
+      outline:none;
+      font-size:14px;
+    }
+    textarea{min-height:100px;resize:vertical}
+    button.primary{
+      background:linear-gradient(90deg, var(--accent), #4dd6a9);
+      border:0;padding:10px 16px;border-radius:10px;color:#042017;font-weight:600;cursor:pointer;
+    }
+    .note{color:var(--muted);font-size:13px;margin-top:8px}
+
+    /* responsive */
+    @media (max-width:880px){
+      .container{grid-template-columns: 1fr; padding:20px}
+      .card{position:relative;top:0}
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container" role="main" aria-labelledby="profileTitle">
+    <!-- left column -->
+    <aside class="card" aria-label="Profile card">
+      <div class="avatar">
+        <!-- Replace src with your image file -->
+        <img src="https://via.placeholder.com/320x320.png?text=Your+Photo" alt="LALITHKUMAR.C">
+      </div>
+
+      <h1 id="profileTitle">LALITHKUMAR.C</h1>
+      <p class="role">Web Developer · Designer · Open-source Enthusiast</p>
+      <p class="bio">Passionate about programming and problem-solving. Currently improving skills in HTMLL,python,C and SQL while working on projects.</p>
+
+      <div class="contact-row" aria-label="Quick info">
+        <div class="chip"><span>Email</span><strong>lalithkumarc09@gmail.com</strong></div>
+        <div class="chip"><span>Location</span><strong>Tiruvannamalai, India</strong></div>
+        <div class="chip"><span>Phone</span><strong>+91 7604899371</strong></div>
+      </div>
+
+      <div class="socials" aria-label="Social links" style="margin-top:14px">
+        <!-- Replace # with your links -->
+        <a href="#" title="GitHub" aria-label="GitHub">GH</a>
+        <a href="#" title="LinkedIn" aria-label="LinkedIn">IN</a>
+      </div>
+    </aside>
+
+    <!-- right column -->
+    <section class="content" aria-label="Profile content">
+      <section id="about">
+        <h2>About</h2>
+        <p>I am Lalithkumar , I enjoy solving logical problems and building software solutions. My focus is on learning HTML,python, C and SQL, and I am actively working on projects to improve my development skills.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills" role="list">
+          <div class="skill">HTML</div>
+          <div class="skill">C</div>
+          <div class="skill">Python</div>
+          <div class="skill">SQL</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+            <strong>Portfolio Website</strong>
+            <a href="#" aria-label="View project">Live →</a>
+          </div>
+          <div class="meta">Personal website built with React and Tailwind. Focus on performance and accessibility.</div>
+        </article>
+
+        <article class="project">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <strong>Open-source CLI</strong>
+            <a href="#" aria-label="View repo">Repo →</a>
+          </div>
+          <div class="meta">A command-line tool to generate boilerplate projects quickly. 1k+ downloads.</div>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm" onsubmit="return submitForm(event)" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label class="sr-only" for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Your email" required>
+            </div>
+          </div>
+
+          <div style="margin-top:10px">
+            <label class="sr-only" for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+            <button type="submit" class="primary">Send Message</button>
+            <div class="note" id="formNote" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <p class="note" style="margin-top:12px">Or email me directly at <a href="mailto:youremail@example.com" style="color:var(--accent)">youremail@example.com</a></p>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    // small helpers
+    function $(sel){return document.querySelector(sel)}
+    function submitForm(e){
+      e.preventDefault();
+      const name = $('#name').value.trim();
+      const email = $('#email').value.trim();
+      const message = $('#message').value.trim();
+      const note = $('#formNote');
+
+      if(!name || !email || !message){
+        note.textContent = 'Please fill all fields.';
+        note.style.color = 'tomato';
+        return false;
+      }
+
+      // For a simple static site we use mailto: to open user's email client.
+      // For a real site, you'd send data to your server (fetch POST).
+      const subject = encodeURIComponent('Message from profile site — ' + name);
+      const body = encodeURIComponent(message + '\n\n— ' + name + '\n' + email);
+      const mailto = mailto:lalithkumarc09@gmail.com?subject=${subject}&body=${body};
+      window.location.href = mailto;
+      note.textContent = 'Opening your email client...';
+      note.style.color = '#9be7c2';
+      return true;
+    }
+  </script>
+</body>
+</html>
